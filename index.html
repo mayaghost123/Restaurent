@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <style>
+    body {
+      background: linear-gradient(238.72deg, #FF0000 0%, #56124F 100%), linear-gradient(127.43deg, #00FFFF 0%, #FF4444 100%), radial-gradient(100.22% 100% at 70.57% 0%, #FF0000 0%, #00FFE0 100%), linear-gradient(127.43deg, #B7D500 0%, #3300FF 100%);
+      background-blend-mode: hard-light, color-burn, color-dodge, normal;
+      height: 100%;
+      width: 100%;
+
+    }
+
+    h3 {
+      background-color: yellow;
+      text-align: center;
+    }
+
+  h1 {
+      /* text-align: center; */
+      /* height: 250px; */
+      background-color: yellow;
+      width: 50%;
+    }
+
+    .icons {
+      text-align: center;
+    }
+
+    .background {
+      background-color: white;
+    }
+
+    button {
+      background-color: #444141;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border: none;
+    }
+
+    button:hover {
+      background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+      animation: slidernbw 5s linear infinite;
+      color: #000;
+    }
+
+    @keyframes slidernbw {
+      to {
+        background-position: 20vw;
+      }
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    #pp {
+      background-color: thistle;
+      width: 100%;
+      height: 4px;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    #sec {
+      margin-bottom: 20px;
+    }
+
+    .position {
+      position: relative;
+    }
+
+    .image_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+      width: 100%;
+
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+    #main_pad {
+      margin-top: 6rem;
+    }
+
+    #main_section {
+      background-image: url(images/foods.jpg);
+      width: 100%;
+      height: 80vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .style {
+      background-color: rgb(255, 196, 0);
+      display: flex;
+      /* justify-content: space-between; */
+      margin: 2.5px;
+
+    }
+
+    .text-main {
+      color: black;
+     background-color: yellow;
+     width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-self: center;
+      justify-items: center;
+      font-weight: bold;
+    }
+    h2{
+   font-size:3rem
+    }
+    small{
+      text-align: center;
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6  col-lg-3 col_height">
+          <h3>TACOS</h3>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col_height">
+          <h3>BEERS</h3>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col_height">
+          <h3>WINES</h3>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col_height">
+          <h3>DESSERS</h3>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <section class="d-flex flex-column justify-content-center mt-4 mb-3 mar_pad">
+    <div class="container">
+      <div class="row px-1">
+        <div class="col-md-8 col-lg-8 col-sm-6 order-md-1 mb-3  mt-4" id="main_section">
+          <h1 class="main_text ml-4 " id="main_pad">Buzz Burger</h1>
+          <small class="main_text ml-4 text-main">Pretty Good Burgers</small>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 order-md-2 mb-3 mt-4 p-0">
+          <ul class="list-group ">
+            <li class="list-group-item d-flex justify-content-between style">
+              <div class="card-body text-center">
+                <h2 class="card-title font-weight-light text-center ">$1.66</h2>
+                <small class="card-subtitle mb-2  ">Burger</small>
+              </div> <br>
+            </li>
+            <li class="list-group-item d-flex justify-content-between style">
+              <div class="card-body text-center">
+                <h2 class="card-title font-weight-light text-center">$3.96</h2>
+                <small class="card-subtitle mb-2 ">Grill Spicy Burger</small>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container first_sec">
+      <div class="row">
+
+
+
+        <div class="col-sm-12 col-md-6 col-lg-3" id="item-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="icons">
+                <span class="material-icons">
+                  wine_bar
+                </span>
+                <h4>wine</h4>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3" id="item-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="icons">
+                <span class="material-icons">
+                  headphones
+                </span>
+                <h4>music</h4>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3" id="item-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="icons">
+                <span class="material-icons">
+                  breakfast_dining
+                </span>
+                <h4>tacos</h4>
+              </div>
+
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3" id="item-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="icons">
+                <span class="material-icons">
+                  nightlife
+                </span>
+                <h4>beers</h4>
+              </div>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-6  col-lg-12 col_height">
+          <div class="card mb-3" style="max-width: 100%;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="images/burger.png" alt="..." width="100%" height="300px">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Featured Taco</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <button> Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+  </section>
+  <section>
+    <div class="container position">
+      <div class="row">
+        <div class="col-sm-12 col-md-6  col-lg-5 col_height line">
+          <div>
+            <p id="pp"></p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-2 col_height">
+          <h4 style="text-align: center; color: white;">Instant Grams</h>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5 col_height">
+          <div>
+            <p id="pp"></p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6  col-lg-3 col_height mb-2">
+          <img src="images/fire.jpg" width="100%">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col_height mb-2">
+
+          <img src="images/shoes.jpg" width="100%">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col_height mb-2">
+
+          <img src="images/galaxy.jpg" width="100%">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col_height mb-2">
+
+          <img src="images/soft.jpg" width="100%">
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+  <section class="section" id="sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6  col-lg-3 col_height mb-2">
+          <img src="images/disco.jpg" width="100%">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col_height mb-2">
+
+          <img src="images/garden.jpg" width="100%">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col_height mb-2">
+
+          <img src="images/desert.jpg" width="100%">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 col_height mb-2">
+
+          <img src="images/baby.jpg" width="100%">
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
